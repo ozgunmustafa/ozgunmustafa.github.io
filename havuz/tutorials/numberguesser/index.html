@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="./js/uikit.min.js"></script>
+        <script src="./js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+        <style>
+            .uk-button{
+                border-radius: 4px!important;
+            }
+            .uk-input{
+                border-radius: 4px!important;
+            }
+        </style>
+        <div class="uk-container" id="game">
+            <div class="uk-card uk-card-default uk-card-body uk-margin-top ">
+                <h1 class="uk-article-title uk-animation-slide-top"><span>Number Guesser</span></h1>
+                <p class="uk-article-meta">Guess a number between <span class="min-num uk-animation-slide-top uk-text-warning"> * </span> and  <span class="max-num uk-animation-slide-top uk-text-warning"> * </span> . </p>
+
+                    <input id="guess-input" class="uk-input uk-background-muted uk-form-blank uk-form-width-medium " type="number" uk-tooltip="title: Sayıyı bul; delay: 500;pos: bottom ;animation:uk-animation-scale-up;" placeholder="tahmin et">
+                    <input id="guess-btn" type="submit" class="uk-button uk-button-primary " value="Check">
+               
+                <p class="message"></p>
+            </div>
+           <script src="./js/app.js"></script>
+     
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+.btn{
+    background-color: transparent;
+    font-family:  'Roboto',Helvetica Neue,Helvetica,Arial,sans-serif;
+    display: inline-block;
+    border-radius: 3px;
+    color: $primaryColor;
+    padding: .7rem .5rem;
+    font-size: 1rem;
+    border:1px solid $lightColor;
+    outline: none;
+    letter-spacing: 1px;
+    transition: all .3s;
+    text-decoration: none;
+    font-weight: 500;
+
+    &-primary{
+        background-color: $primaryColor;
+        border:1px solid $primaryColor;
+        color: $whiteColor;
+    }
+    &-secondary{
+        background-color: $secondaryColor;
+        border:1px solid $secondaryColor;
+        color: $whiteColor;
+    }
+    &-white{
+        background-color: $whiteColor;
+        border:1px solid $whiteColor;
+        color: $primaryColor;
+    }
+}
+
+.btn-outline{
+    border:1px solid $lightColor;
+    background-color: transparent;
+    border-radius: 5px;
+    color: $primaryColor;
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem;
+    border: none;
+    &-primary{
+        border:1px solid $primaryColor;
+        color: $primaryColor;
+        &:hover{
+            background-color:$primaryColor;
+            color: $whiteColor;
+        }
+    }
+    &-secondary{
+        border:1px solid $secondaryColor;
+        color: $secondaryColor;
+        &:hover{
+            background-color:$secondaryColor;
+            color: $whiteColor;
+        }
+    }
+    &-white{
+        border:1px solid $whiteColor;
+        color: $whiteColor;
+        &:hover{
+            background-color:$whiteColor;
+            color: $primaryColor;
+        }
+    }
+}

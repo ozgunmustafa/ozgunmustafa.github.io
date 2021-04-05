@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Tutorial</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <style>
+    * {
+      outline: none;
+      box-sizing: border-box;
+    }
+    body{
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1040%26quot%3b)' fill='none'%3e%3cpath d='M143.11 333.47a5.6 5.6 0 1 0-10.81 2.94 5.6 5.6 0 1 0 10.81-2.94zM127.67 337.67a5.6 5.6 0 1 0-10.8 2.95 5.6 5.6 0 1 0 10.8-2.95zM112.23 341.88a5.6 5.6 0 1 0-10.8 2.95 5.6 5.6 0 1 0 10.8-2.95zM96.8 346.09a5.6 5.6 0 1 0-10.81 2.95 5.6 5.6 0 1 0 10.81-2.95z' fill='rgba(231%2c 54%2c 53%2c 0.1)'%3e%3c/path%3e%3ccircle r='86.74372166633178' cx='922' cy='342.65' fill='rgba(211%2c 183%2c 20%2c 0.1)'%3e%3c/circle%3e%3cpath d='M1318.89 430.3L1306.09 429.75 1303.82 417.15 1291.03 416.59 1288.76 403.99 1275.96 403.44 1273.69 390.84M1324.15 424.28L1311.36 423.72 1309.09 411.12 1296.29 410.57 1294.02 397.97 1281.23 397.41 1278.96 384.81' stroke='rgba(231%2c 54%2c 53%2c 0.1)' stroke-width='1.59'%3e%3c/path%3e%3crect width='336' height='336' clip-path='url(%26quot%3b%23SvgjsClipPath1041%26quot%3b)' x='538.71' y='132.99' fill='url(%23SvgjsPattern1042)' transform='rotate(336.52%2c 706.71%2c 300.99)'%3e%3c/rect%3e%3crect width='145.32000000000002' height='145.32000000000002' clip-path='url(%26quot%3b%23SvgjsClipPath1043%26quot%3b)' x='339.37' y='331.9' fill='url(%23SvgjsPattern1044)' transform='rotate(157.81%2c 412.03%2c 404.56)'%3e%3c/rect%3e%3cpath d='M1361.96 311.22L1370.49 301.67 1381.68 307.9 1390.21 298.35 1401.4 304.58 1409.93 295.03 1421.12 301.26M1363.28 319.11L1371.82 309.56 1383.01 315.79 1391.54 306.24 1402.73 312.47 1411.26 302.92 1422.45 309.15' stroke='rgba(231%2c 54%2c 53%2c 0.1)' stroke-width='1.64' stroke-dasharray='3%2c 3'%3e%3c/path%3e%3ccircle r='46.666666666666664' cx='135.36' cy='402.89' stroke='rgba(3%2c 123%2c 11%2c 0.11)' stroke-width='1.94' stroke-dasharray='3%2c 3'%3e%3c/circle%3e%3cpath d='M184.78 337.78999999999996 L193.86 338.35L195.22176692000565 332.1682330799943z' stroke='rgba(3%2c 123%2c 11%2c 0.11)' stroke-width='1.83'%3e%3c/path%3e%3cpath d='M270.29 91.34L261.91 101.02 250.62 94.97 242.24 104.65 230.95 98.6 222.57 108.28 211.28 102.22' stroke='rgba(231%2c 54%2c 53%2c 0.1)' stroke-width='2.14' stroke-dasharray='3%2c 2'%3e%3c/path%3e%3cpath d='M39.27 383.57a5.6 5.6 0 1 0 7.21-8.57 5.6 5.6 0 1 0-7.21 8.57zM49.57 371.33a5.6 5.6 0 1 0 7.21-8.57 5.6 5.6 0 1 0-7.21 8.57zM59.87 359.09a5.6 5.6 0 1 0 7.21-8.57 5.6 5.6 0 1 0-7.21 8.57zM70.17 346.85a5.6 5.6 0 1 0 7.21-8.57 5.6 5.6 0 1 0-7.21 8.57z' fill='rgba(211%2c 183%2c 20%2c 0.1)'%3e%3c/path%3e%3crect width='192' height='192' clip-path='url(%26quot%3b%23SvgjsClipPath1045%26quot%3b)' x='1134.5' y='212.82' fill='url(%23SvgjsPattern1046)' transform='rotate(171.4%2c 1230.5%2c 308.82)'%3e%3c/rect%3e%3crect width='332.8' height='332.8' clip-path='url(%26quot%3b%23SvgjsClipPath1047%26quot%3b)' x='1199.23' y='387.72' fill='url(%23SvgjsPattern1048)' transform='rotate(80.73%2c 1365.63%2c 554.12)'%3e%3c/rect%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1040'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern1042'%3e%3cpath d='M3 1L3 5M1 3L5 3' stroke='rgba(231%2c 54%2c 53%2c 0.1)' fill='none' stroke-width='1.44'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1041'%3e%3ccircle r='84' cx='706.71' cy='300.99'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='10.38' height='10.38' patternUnits='userSpaceOnUse' id='SvgjsPattern1044'%3e%3cpath d='M0 10.38L5.19 0L10.38 10.38' stroke='rgba(231%2c 54%2c 53%2c 0.1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1043'%3e%3ccircle r='36.330000000000005' cx='412.03' cy='404.56'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern1046'%3e%3cpath d='M3 1L3 5M1 3L5 3' stroke='rgba(231%2c 54%2c 53%2c 0.1)' fill='none' stroke-width='1.67'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1045'%3e%3ccircle r='48' cx='1230.5' cy='308.82'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='332.8' height='6.4' patternUnits='userSpaceOnUse' id='SvgjsPattern1048'%3e%3crect width='332.8' height='3.2' x='0' y='0' fill='rgba(231%2c 54%2c 53%2c 0.1)'%3e%3c/rect%3e%3crect width='332.8' height='3.2' x='0' y='3.2' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/rect%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1047'%3e%3ccircle r='83.2' cx='1365.63' cy='554.12'%3e%3c/circle%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+    }
+    html,
+    body,
+    ul,
+    ol {
+      padding: 0;
+      margin: 0;
+      font-family: "Kumbh Sans", sans-serif;
+    }
+    button {
+      border: none;
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      margin: 0;
+    }
+    figure {
+      margin: 0;
+    }
+    .container {
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 0 clamp(1rem, 100%, 1.2rem);;
+    }
+    .main-wrapper{
+        display: flex;
+        align-items: center;
+        min-height: 100vh
+    }
+    
+    .tutorial-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px;
+    }
+    .tutorial-card {
+      background-color: white;
+      border-radius: 7px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      padding: 2em 1em;
+      transition: 0.3s;
+      border: 1px solid #eee;
+    }
+    .tutorial-card:hover {
+      box-shadow: none;
+      padding: 2em 1em;
+    }
+    .tutorial-card .title {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    .tutorial-card .desc {
+      font-size: 14px;
+      color: rgb(165, 165, 165);
+    }
+    .tutorial-card .image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      object-position: top;
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: 768px) {
+      .tutorial-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+      }
+    }
+  </style>
+  <body>
+    <div class="main-wrapper">
+      <div class="container">
+        <div style="display: flex; align-items: center;">
+          <img style="width: 200px; height: 200px;" src="https://joeschmoe.io/api/v1/male/random">
+        </div>
+        <h1 style="margin-bottom: 1em; margin-top: 30px">Havuz</h1>
+        <div class="tutorial-list">
+          <a href="works/index.html" class="tutorial-card">
+            <h3 class="title">Çalışmalar</h3>
+          </a>
+          <a href="tutorials/index.html" class="tutorial-card">
+            <h3 class="title">Denemeler</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

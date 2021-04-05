@@ -1,0 +1,104 @@
+header{
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  padding: 10px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.feature-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap:50px;
+}
+
+.shrink{
+  background-color: white;
+  padding: 0;
+}
+
+.nav-item:not(:last-child){
+  margin-right: 15px;
+
+}
+.logo{
+  width: 200px;
+  height: auto;
+}
+
+
+
+
+
+.ipAddressForm{
+  input{
+    flex: 1;
+    padding: 20px 0;
+    text-indent: 16px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-style: italic;
+  }
+  button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: $white;
+  }
+}
+
+.ipAddressFormWrapper{
+  margin: 0 auto;
+}
+
+#banner{
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background-image: url('../img/banner.png');
+  background-repeat: no-repeat;
+
+}
+
+
+.navbar-nav{
+  align-items: center;
+}
+
+
+
+@include min-screen($break-small) {
+  .hide-more-md {
+    display: none !important;
+  }
+  .ipAddressFormWrapper{
+    width: 50%;
+  }
+}
+@include max-screen($break-small) {
+  .hide-less-md {
+    display: none !important;
+  }
+  #banner{
+    background-position-x: center;
+  }
+  .feature-grid{
+    grid-template-columns: repeat(1,1fr);
+    grid-gap:20px;
+  }
+  .ipAddressForm{
+    display: flex;
+    flex-direction: column;
+    input{
+      width: 100%!important;
+      padding: 10px 0;
+    }
+    button{
+      width: 100%;
+    }
+  }
+  
+}
+

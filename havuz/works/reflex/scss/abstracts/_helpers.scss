@@ -1,0 +1,249 @@
+
+.d-flex-center{
+    display: flex;
+    align-items: center;
+}
+.box-title{
+    font-family: 'Gotham Rounded Bold';
+}
+.responsive{
+    width: 100%;
+    height: auto;
+}
+.centered{
+    display: flex!important;
+    align-items: center!important;
+}
+.fit-content{
+    width: fit-content;
+}
+
+//bordered
+.border-primary{
+    border:1px solid $purple
+}
+
+.bordered-bottom{
+    border-bottom: 1px solid $color-secondary;
+}
+.bordered-bottom-muted{
+    border-bottom: 1px solid $muted-bg;
+}
+.bordered-bottom-white{
+    border-bottom: 1px solid $white;
+}
+
+.linear-gradient-primary{
+    background-image: $linear-gradient-primary;
+}
+.linear-gradient-ternary{
+    background-image: $linear-gradient-ternary;
+}
+
+
+
+.bordered-bottom-primary{
+    border-bottom: 2px solid $color-primary;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.flex-start{
+    justify-content: flex-start;
+}
+
+//shadows
+.shadow-1{
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.06);
+}
+.shadow-bottom{
+    border-bottom: 1px solid #f1f1f1;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+//bg-colors
+
+.bg-orange {
+    background: $orange;
+    color: rgba($white,0.7);
+}
+.bg-muted {
+    background: $muted-bg;
+}
+.bg-primary {
+    background: $color-primary;
+    color: rgba($white,0.7);
+}
+.bg-purple {
+    background: $purple;
+    color: rgba($white,1);
+}
+.bg-white {
+    background:$white;
+}
+.bg-light-blue{
+    background-color: $light-blue;
+}
+//text-colors
+.text-primary{
+    color: $purple!important;
+}
+.text-navy{
+    color: $navy-blue!important;
+}
+
+.rounded-25{
+    border-radius: 25px!important;
+}
+.rounded-50{
+    border-radius: 50px!important;
+}
+.text-muted {
+    color: $muted-color;
+}
+
+.font-2x{
+    font-size: 2em;
+}
+.h-100{
+    height: 100%;
+}
+.min-h-50{
+    min-height: 50px;
+}
+
+
+//Margin
+@for $i from 1 through 8 {
+    .ml-#{$i * 5} {
+        margin-left: #{$i * 5}px!important;
+    }
+
+    .mt-#{$i * 5} {
+        margin-top: #{$i * 5}px!important;
+    }
+
+    .mr-#{$i * 5} {
+        margin-right: #{$i * 5}px!important;
+    }
+
+    .mb-#{$i * 5} {
+        margin-bottom: #{$i * 5}px!important;
+    }
+    .mx-#{$i * 5} {
+        margin-right: #{$i * 5}px!important;
+        margin-left: #{$i * 5}px!important;
+    }
+}
+.margin-0 {
+    margin: 0 !important;
+}
+.margin-auto{
+    margin-left:auto ;
+    margin-right:auto ;
+}
+
+@for $i from 1 through 8 {
+    .pl-#{$i * 5} {
+        padding-left: #{$i * 5}px;
+    }
+
+    .pt-#{$i * 5} {
+        padding-top: #{$i * 5}px;
+    }
+
+    .pr-#{$i * 5} {
+        padding-right: #{$i * 5}px;
+    }
+
+    .pb-#{$i * 5} {
+        padding-bottom: #{$i * 5}px;
+    }
+    .px-#{$i * 5} {
+        padding-right: #{$i * 5}px;
+        padding-left: #{$i * 5}px;
+    }
+    .py-#{$i * 5} {
+        padding-top: #{$i * 5}px;
+        padding-bottom: #{$i * 5}px;
+    }
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+.py-0 {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+// @for $i from 5 through 49 {
+//     .font-#{$i + 1} {
+//         font-size: #{$i + 1}px;
+//     }
+// }
+
+.text-left     {text-align: left; }
+.text-center   {text-align: center; }
+.text-right    {text-align: right; }
+.text-justify  {text-align: justify; }
+
+.font300        {font-weight: $font-weight-300; }
+.font600        {font-weight: $font-weight-600; }
+.font700        {font-weight: $font-weight-700; }
+
+.font-bold{
+    font-family: $font-bold!important;
+}
+.font-book{
+    font-family: $font-book!important;
+}
+
+
+.card-shadow{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
+}
+
+
+.z-index        {z-index: 9999;}
+
+.w30            {width: 30px;}
+.w40            {width: 40px;}
+.w60            {width: 60px;}
+.w80            {width: 80px;}
+.w100           {width: 100px;}
+
+.theme-bg{
+    background: $color-primary;
+    &.gradient{
+        background: var(--primary-gradient);
+    }
+}
+
+@include max-screen($break-small - 1px){
+    .hidden-xs{
+		display: none !important;
+	}
+    .box-title{
+        font-size: 1.5em;
+    }
+    
+}
+@include min-screen($break-small){
+    .hidden-more-md{
+		display: none !important;
+	}
+}
+@include max-screen($break-small){
+    .hidden-less-md{
+		display: none !important;
+	}
+    .main-margin{
+        margin-top: 110px;
+    }
+
+}
+@include max-screen($break-medium){
+    .hidden-sm{
+		display: none !important;
+	}
+}

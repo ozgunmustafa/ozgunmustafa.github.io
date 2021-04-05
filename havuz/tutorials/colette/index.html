@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Colette</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/toastr.min.css">
+</head>
+<style>
+    .yatay {
+        min-height: 100px;
+    }
+
+    .dikey {
+        min-height: 400px;
+    }
+    .bg{
+        background: url(bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+<body>
+
+    <div id="exercise">
+
+        <div class="row text-center ">
+            <div class="col-md-6 offset-lg-3">
+                <div class="card border-0 bg">
+                    <div class="card-body">
+                        <p class="text-muted">Yatay renk paletini oluştur <small class="text-warning"> sırayla
+                                seç</small>
+                        </p>
+
+                        <div class="row justify-content-center align-item-center">
+                            <div class="col-2 yatay bg-light">
+                                <input type="color" class="border border-white shadow-sm mt-3"
+                                    style="width: 100%; height: 50%;" v-model="color1">
+                                <label  @click="generator" >Rastgele</label>
+
+                            </div>
+                            <div class="col-10 yatay" :style="{backgroundColor:color1}"></div>
+                        </div>
+
+                        <div class="row justify-content-center align-item-center">
+                            <div class="col-2 yatay bg-light">
+                                <input type="color" class="border border-white shadow-sm mt-3"
+                                    style="width: 100%; height: 50%;" v-model="color2">
+                            </div>
+                            <div class="col-10 yatay" :style="{backgroundColor:color2}"></div>
+                        </div>
+                        <div class="row justify-content-center align-item-center">
+                            <div class="col-2 yatay bg-light">
+                                <input type="color" class="border border-white shadow-sm mt-3"
+                                    style="width: 100%; height: 50%;" v-model="color3">
+                            </div>
+                            <div class="col-10 yatay" :style="{backgroundColor:color3}"></div>
+                        </div>
+                        <div class="row justify-content-center align-item-center">
+                            <div class="col-2 yatay bg-light">
+                                <input type="color" class="border border-white shadow-sm mt-3"
+                                    style="width: 100%; height: 50%;" v-model="color4">
+                            </div>
+                            <div class="col-10 yatay" :style="{backgroundColor:color4}"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-lg-3">
+
+                <div class="card border-0 bg">
+                    <div class="card-body">
+                        <p class="text-muted">Dikey renk paletini oluştur <small class="text-warning"> sırayla
+                                seç</small>
+                        </p>
+
+                        <div class="row text-center">
+                            <div class="col-3 yatay bg-light ">
+                                <input type="color" class="border border-white shadow-sm mt-3"
+                                    style="width: 100%; min-height: 50%;" v-model="color5">
+                                    
+                            </div>
+                            <div class="col-3 yatay  bg-light">
+                                <input type="color" class="border border-white shadow-sm mt-3"
+                                    style="width: 100%; min-height: 50%;" v-model="color6">
+                            </div>
+                            <div class="col-3 yatay  bg-light">
+                                <input type="color" class="border border-white shadow-sm mt-3"
+                                    style="width: 100%; min-height: 50%;" v-model="color7">
+                            </div>
+
+                            <div class="col-3 yatay  bg-light">
+                                <input type="color" class="border border-white shadow-sm mt-3"
+                                    style="width: 100%; min-height: 50%;" v-model="color8">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-3 dikey" :style="{backgroundColor:color5}"></div>
+                            <div class="col-3 dikey" :style="{backgroundColor:color6}"></div>
+                            <div class="col-3 dikey" :style="{backgroundColor:color7}"></div>
+                            <div class="col-3 dikey" :style="{backgroundColor:color8}"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/vue.js"></script>
+        <script>
+            new Vue({
+                el: '#exercise',
+                data: {
+                    color1: "",
+                    color2: "",
+                    color3: "",
+                    color4: "",
+                    color5: "",
+                    color6: "",
+                    color7: "",
+                    color8: "",
+
+                },
+                methods: {
+                    generator: function () {
+                        this.color1 = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
+                    }
+                }
+            });
+
+        </script>
+
+</body>
+
+</html>

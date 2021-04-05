@@ -1,0 +1,33 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $secondary-color;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    padding: 20px 10px;
+    transition: all 0.2s ease-in-out;
+}   
+.logo{
+    width: 180px;
+    height: auto;     
+}
+
+
+
+@include min-screen($break-small) {
+    .main-nav{
+        border-right: 1px solid $secondary-color;
+    }
+    #main-menu{
+        .first-level-item > a:before {
+            margin-right:7px ;
+            content: "•";
+            color: $secondary-color;
+        }
+    }
+
+}

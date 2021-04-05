@@ -1,0 +1,623 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+html {
+  font-family: "Inter";
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  color: #2d4059;
+  text-decoration: none !important;
+}
+a:hover {
+  color: #496992 !important;
+}
+select {
+  -webkit-appearance: none;
+  background-image: url("../img/icons/down-arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+main {
+  margin-top: 80px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,p,.h6 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+/* Bootstrap */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #2d4059;
+}
+.logo {
+  width: 190px;
+}
+.section-title {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: x-large;
+  color: #333d4b;
+  margin-bottom: 20px;
+}
+.form-control {
+  padding: 0.375rem 0.1rem;
+}
+.shadow-xs {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border: 2px solid transparent;
+}
+.btn {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+.mw-100{
+  width: 150px;
+}
+.bg-med-blue {
+  background-color: #2d4059;
+}
+.btn-med-blue {
+  color: white;
+  background-color: #2d4059;
+}
+.btn:hover {
+  color: rgb(214, 214, 214)!important;
+}
+.btn-danger {
+  background-color: rgb(215, 60, 65);;
+  color: white !important;
+  border: none;
+}
+.btn-white {
+  background-color: white;
+  color: #2d4059;
+}
+.primary-links {
+  display: flex;
+}
+
+.text-med-blue {
+  color: #3594cb;
+}
+.site-title {
+  color: white;
+}
+.site-title {
+  color: white;
+}
+.site-subtitle {
+  color: rgba(255, 255, 255, 0.849);
+}
+.nav-item{
+  font-weight: 500;
+}
+
+
+
+
+
+
+.color-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* background: rgb(0, 0, 0);
+    background: rgb(37,37,37);
+    background: linear-gradient(0deg, rgba(37,37,37,0.7903536414565826) 0%, rgba(77,77,77,0.8603816526610644) 49%, rgba(255,255,255,0) 84%); */
+}
+
+.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.banner-title{
+  color: white;
+  text-align: left;
+  font-weight: 800;
+}
+.banner-subtitle{
+  text-align: left;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+.category-list {
+  list-style-type: none;
+}
+
+.category-list li a {
+  color: #3594cb;
+  padding: 5px;
+  font-size: 12px;
+}
+.category-item {
+  display: inline-block;
+}
+
+/*Swiper*/
+.swiper-1 {
+  width: 100%;
+  height: 92vh;
+}
+.swiper-2 {
+  width: 100%;
+}
+.bg-trans {
+  background-color: rgba(0, 0, 0, 0.514);
+  height: 100%;
+  width: 100%
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-light{
+  color: #adadad!important;
+}
+
+
+#overlay {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(37, 37, 37);
+  background: linear-gradient(
+    0deg,
+    rgba(37, 37, 37, 0.7903536414565826) 23%,
+    rgba(255, 255, 255, 0) 74%
+  );
+  display: flex;
+}
+.articles {
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+}
+.article-card {
+  border-radius: 20px;
+  position: relative;
+}
+.article-image {
+  width: 100%;
+  height: 275px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+
+
+
+.article-footer {
+  padding: 20px;
+  position: absolute;
+  bottom: -10px;
+  font-family: "Inter";
+  color: white;
+}
+.article-title {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 22px;
+  color: white;
+}
+.grid-3 {
+  display: grid;
+  grid-gap: 10px;
+}
+.doctor-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.doctor-avatar {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.doctor-name {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 19px;
+  color: #333d4b;
+}
+
+.doctor-department {
+  font-weight: 500;
+  font-family: "Inter";
+  color: #333d4b;
+}
+.star {
+  width: 15px;
+  height: 15px;
+}
+.topics-bg {
+  background: url(../img/bg.png) no-repeat center center fixed;
+  width: 100%;
+  object-fit: scale-down;
+  height: 100%;
+}
+
+.health-guides {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+.health-guide-card {
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.918);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.06);
+}
+.health-guide-card i {
+  color: #ff719d;
+}
+.health-guide-card .title {
+  margin: 0 0 15px 0;
+  padding: 0 0 11px 0;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #3b97cc;
+  text-transform: uppercase;
+  position: relative;
+  font-family: "Source Sans Pro";
+}
+.health-guide-card .link {
+  font-family: "Source Sans Pro";
+  color: #5e5e5e;
+  font-weight: 600;
+}
+.health-guide-card .link:last-child {
+  color: #3b97cc;
+}
+
+.questions{
+  display: grid;
+  grid-gap: 15px;
+}
+
+.question-card {
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.06);
+}
+.question-card .header {
+  display: flex;
+}
+.question-card .image {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.06);
+}
+.border-top{
+  border-top: 2px solid #b2e3ff;
+}
+.footer-box{
+  background-color: rgb(9, 38, 90);
+  color:white;
+}
+.footer-menus{
+  display: grid;
+  grid-gap: 15px;
+}
+.footer-menu{
+  list-style-type: none;
+}
+.footer-menu .item{
+  font-size: 13px;
+  transition: all ease .2s;
+}
+.footer-menu .item:hover{
+  color: #2d4059;
+}
+.footer-menu .item:first-child{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.footer-menu h5{
+  font-size: 12px;
+  width: fit-content;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+  border-bottom:2px solid #00ADA1;
+}
+.footer-menu a{
+  color: white;
+}
+.footer-social{
+  display: flex;
+  align-items: center;
+}
+.footer-menus input{
+  font-size: 14px;
+  padding: 10px 5px;
+  text-indent: 7px;
+}
+.instagram-posts{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.post-card{
+  border-radius: 5px;
+}
+.post-card-image{
+  width: 100%;
+  border-radius: 5px;
+
+}
+.post-card .icon{
+  width: 24px;
+  height: 24px;
+}
+.post-card .icon +.icon{
+  margin-left: 8px;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+.social-icons i{
+  color: white;
+  font-size:15px;
+  transition: all ease .2s;
+}
+.social-icons i:hover{
+  color: #acacac;
+}
+/* TAB MENU */
+.container-tab {
+  width: 100%;
+  max-width:  900px;
+  margin: 0 auto;
+}
+
+.arrows {
+  display: none;
+}
+.topics:hover .arrows {
+  display: flex;
+}
+
+.tab-menu {
+  display: block;
+  width: fit-content;
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  text-align: left
+}
+
+.tab-menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.tab-menu li a {
+  border:2px solid white;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  display: block;
+  color: #2d4059;
+  background-color: white;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-family: Arial;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.tab-content {
+  display: none
+}
+
+#tab1 {
+  display: block
+}
+
+.tab-container {
+  background-color: rgba(255, 255, 255, 0.842);
+  padding: 20px;
+  font-family: Arial;
+  font-size: 14px;
+  color: #666;
+  border-radius: 2px;
+}
+
+.current a {
+  background: #ea5455 !important;
+  border: 2px solid #ea5455 !important;
+  color: #fff !important;
+
+}
+/* TAB MENU */
+.download-icons{
+  display: grid;
+  grid-gap: 7px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.store-link-box{
+  display: grid;
+  color:white;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 5px;
+  background-color: rgb(9, 38, 90);
+  border:1px solid white;
+  border-radius: 6px;
+  width: 100%;
+  align-items: center;
+}
+.store-link-box img{
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .primary-links {
+    flex-direction: column;
+  }
+  .search-area {
+    width: 100%;
+  }
+  .banner {
+    grid-template-columns: 1fr;
+  }
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .doctors {
+    grid-template-columns: 1fr;
+  }
+  .swiper-1 {
+    display: none;
+  }
+  .articles {
+    grid-template-columns: 1fr;
+  }
+  .questions{
+    grid-template-columns: 1fr;
+  }
+  .health-guides {
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-gap: 15px;
+  }
+  .footer-menus ul{
+    display: none;
+    }
+  .footer-social{
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  }
+  .m-t-5{
+    margin-left: 0px!important;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .instagram-posts{
+    grid-template-columns:  1fr;
+  }
+  .bg-img {
+    width: 100%;
+    height: 80vh;
+    background: url(../img/bg3.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+}
+@media only screen and (min-width: 768px) {
+  .bg-img {
+    width: 100%;
+    height: 80vh;
+    background: url(../img/bg3.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .primary-links {
+    flex-direction: row;
+  }
+  .btn {
+    padding: 0.1rem 0.3rem;
+  }
+  .search-input {
+    max-width: 130px;
+  }
+  .banner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-3 {
+    grid-template-columns: 55% 30% 1fr;
+  }
+  .doctors {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .articles {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .questions{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-menus{
+    grid-template-columns: 2fr 2fr 2fr 5fr;
+  }
+  .health-guides {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+  .footer-social{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .instagram-posts{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1250px;
+  }
+}

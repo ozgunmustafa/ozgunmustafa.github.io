@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,800&display=swap');
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?jbv5xb');
+    src:  url('../fonts/icomoon.eot?jbv5xb#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?jbv5xb') format('truetype'),
+      url('../fonts/icomoon.woff?jbv5xb') format('woff'),
+      url('../fonts/icomoon.svg?jbv5xb#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-website:before {
+    content: "\e900";
+    color: #ffae00;
+  }
+  .icon-delisting:before {
+    content: "\e901";
+    color: #ffae00;
+  }
+  .icon-listing:before {
+    content: "\e902";
+    color: #ffae00;
+  }
+  .icon-list-item:before {
+    content: "\e903";
+    color: #ffae00;
+  }
+  .icon-location:before {
+    content: "\e904";
+    color: #ffae00;
+  }
+  .icon-lifebuoy:before {
+    content: "\e941";
+  }
+  .icon-phone:before {
+    content: "\e942";
+  }
+  .icon-drawer2:before {
+    content: "\e95d";
+  }
+  .icon-search:before {
+    content: "\e986";
+  }
+  

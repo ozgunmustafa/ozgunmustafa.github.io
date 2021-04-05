@@ -1,0 +1,11 @@
+.icon-colored::before{
+    content: '';
+    background-color: $light-blue;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 12px;
+    left: 4px;
+    border-radius: 50%;
+    
+}

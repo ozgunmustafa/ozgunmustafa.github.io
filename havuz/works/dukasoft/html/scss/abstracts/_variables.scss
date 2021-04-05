@@ -1,0 +1,41 @@
+$font-family: 			'Museo', sans-serif;
+
+
+
+$font-size: 			15px;
+
+// Bootstrap colors
+$primary-color: 			#0E9BA6;
+$secondary-color: 			#5cb250;
+$ternary-color:               #FAB522;
+
+
+$color-muted:#DDDDDD;
+$color-white:#fff;
+$color-dark:#404041;
+$color-link:$primary-color;
+
+
+$bg-gradient-primary: linear-gradient(rgba(14, 118, 137, 0.99) 0%, #5cb250 100%);
+$shadow-primary: drop-shadow(0px 1px 50px $primary-color);
+
+
+$font-weight-100: 100   !default;
+$font-weight-300: 300   !default;
+$font-weight-500: 500   !default;
+$font-weight-700: 700   !default;
+$font-weight-900: 900   !default;
+
+
+// Breakpoints
+$break-xsmall: 			640px;
+$break-small: 			768px;
+$break-medium: 			992px;
+$break-1024: 			1024px;
+$break-large: 			1200px;
+$break-1280: 			1280px;
+$break-xlarge: 			1440px;
+$break-xxlarge: 		1600px;
+
+
+

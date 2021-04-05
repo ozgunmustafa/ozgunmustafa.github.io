@@ -1,0 +1,28 @@
+.card{
+    padding: 1.5rem clamp(1rem, 5%, 3rem);
+}
+
+.feature-card{
+    display: flex;
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 1.5em;
+    transition: all ease-in-out .3s;
+    .ico{
+      background-color: #ffae0040;
+      display: inline-block;
+      min-width: 80px;
+      min-height: 80px;
+      max-width: 80px;
+      max-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-right: 1em;
+    }
+    &:hover{
+      box-shadow: none;  
+    }
+  }

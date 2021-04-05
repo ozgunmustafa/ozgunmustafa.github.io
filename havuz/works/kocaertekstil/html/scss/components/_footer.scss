@@ -1,0 +1,18 @@
+footer{
+    min-height: 40vh;
+  }
+  .footer-bg{
+    background: url('../img/footer-bg.png');
+    display: flex;
+    align-items: center;
+    min-height: 350px;
+  }
+  .footer-title-sm{
+    font-size: .9em;
+    letter-spacing: 0.4em; 
+    text-transform: uppercase;
+  }
+  .footer-title{
+    font-size: 2em;
+    font-weight: bold;
+  }

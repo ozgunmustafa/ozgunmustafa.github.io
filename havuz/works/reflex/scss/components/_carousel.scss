@@ -1,0 +1,52 @@
+#refleksPlusCarousel{
+    .owl-dots{
+        display: flex;
+        align-items: flex-end;
+        
+        .owl-dot{
+            background-color: white;
+            color: $color-primary;
+            margin-right:10px ;
+            border-radius: 25px;
+            padding: 7px 5px;
+            .pagi-btn{
+                border-radius: 25px;
+                font-size: 1.3em;
+                border: none;
+                background-color: transparent;
+                color: white;
+                outline: none;
+                &:focus{
+                    outline: none;
+                }
+                &-text{
+                    display: none;
+                    margin-left: 5px;
+                    color: $color-primary;
+
+                }
+                i{
+                    pointer-events: none;
+                }
+            }
+
+            &.active{
+                .pagi-btn{
+                    &-text{
+                        display: inline;
+    
+                    }
+                }
+            }
+            
+           
+
+        }
+    }
+
+    .owl-item .item{
+        background-position-y: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
